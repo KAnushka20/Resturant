@@ -1,0 +1,86 @@
+/* Reset all default spacing and ensure edge-to-edge layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* Make root container fill the entire viewport */
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+  max-height: 6em;
+  height: auto;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo animation for motion preference */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card component styling */
+.card {
+  padding: 2em;
+  max-width: 100%;
+}
+
+/* Docs link or text */
+.read-the-docs {
+  color: #888;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  word-wrap: break-word;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .logo {
+    padding: 1rem;
+    max-height: 4em;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    padding: 3rem;
+  }
+}
