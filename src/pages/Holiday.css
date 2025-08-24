@@ -1,0 +1,109 @@
+.holiday-page {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero */
+.holiday-hero {
+  background: url("https://i.pinimg.com/1200x/03/5f/88/035f88708e05b8c52e8f8fe905604b98.jpg")
+    center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.holiday-hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.holiday-hero-title {
+  font-size: 3rem;
+}
+.holiday-hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* About */
+.holiday-about {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.holiday-about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #28a745;
+}
+.holiday-about-text {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Info */
+.holiday-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  align-items: center;
+}
+.holiday-info-text {
+  flex: 1;
+}
+.holiday-info-text h2 {
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+.holiday-info-img {
+  flex: 1;
+}
+.holiday-info-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider */
+.holiday-slider {
+  background: #f8fff5;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.holiday-slider-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #28a745;
+}
+.holiday-slider-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.holiday-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  max-width: 300px;
+  flex: 1 1 250px;
+}
+.holiday-card:hover {
+  transform: translateY(-5px);
+}
+.holiday-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.holiday-card p {
+  padding: 1rem;
+  font-weight: 500;
+}

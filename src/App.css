@@ -1,26 +1,42 @@
-/* Reset all default spacing and ensure edge-to-edge layout */
+/* Reset default spacing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Full width + height for app */
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
   background-color: #fff;
 }
 
-/* Make root container fill the entire viewport */
+/* Root container covers full screen */
 #root {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
+}
+
+/* Ensure all sections stretch full width */
+section,
+header,
+footer,
+div {
+  max-width: 100%;
+}
+
+/* Remove container side spacing if added */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Logo Styling */
@@ -37,7 +53,7 @@ body {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* Logo animation for motion preference */
+/* Logo animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -58,7 +74,7 @@ body {
   max-width: 100%;
 }
 
-/* Docs link or text */
+/* Docs link */
 .read-the-docs {
   color: #888;
   font-size: 1rem;
@@ -67,7 +83,7 @@ body {
   word-wrap: break-word;
 }
 
-/* Responsive tweaks */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .logo {
     padding: 1rem;

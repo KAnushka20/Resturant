@@ -1,0 +1,116 @@
+/* General Page */
+.birthday-page {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.birthday-hero {
+  background: url("https://i.pinimg.com/1200x/e0/c7/b6/e0c7b61a6fd1114526f697e96ac1f761.jpg")
+    center/cover no-repeat;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.birthday-hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.birthday-hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.birthday-hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* About Section */
+.birthday-about {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.birthday-about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff4081;
+}
+.birthday-about-text {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Info with Image */
+.birthday-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+.birthday-info-text {
+  flex: 1;
+}
+.birthday-info-text h2 {
+  color: #ff4081;
+  margin-bottom: 1rem;
+}
+.birthday-info-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.birthday-info-img {
+  flex: 1;
+}
+.birthday-info-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider Section */
+.birthday-slider {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff5f8;
+}
+.birthday-slider-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ff4081;
+}
+.birthday-slider-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.birthday-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.birthday-card:hover {
+  transform: translateY(-5px);
+}
+.birthday-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.birthday-card p {
+  padding: 1rem;
+  font-weight: 500;
+}

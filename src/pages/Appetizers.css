@@ -1,0 +1,144 @@
+.appetizers-page {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.appetizers-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.appetizers-title {
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+.appetizers-subtitle {
+  font-size: 1.9rem;
+  color: #ffffff;
+}
+
+.appetizers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.appetizers-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 127, 80, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.appetizers-card:hover {
+  transform: translateY(-6px);
+}
+
+.appetizers-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.appetizers-info {
+  padding: 15px;
+  text-align: center;
+  background: linear-gradient(
+    315deg,
+    #ffffff,
+    #f1b1b1,
+    #ffffff,
+    #ffffff,
+    #f8fcdb,
+    #ffffff
+  );
+}
+
+.appetizers-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff7f50;
+}
+
+.appetizers-desc {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.appetizers-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff4500;
+}
+
+.appetizers-back {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.appetizers-btn {
+  padding: 10px 20px;
+  background: #ff7f50;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.appetizers-btn:hover {
+  background: #ff6347;
+}
+
+.appetizers-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+
+/* Video as background */
+.appetizers-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Dark overlay for better readability */
+.appetizers-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.appetizers-content {
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.appetizers-title {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.appetizers-subtitle {
+  font-size: 22px;
+  font-weight: 300;
+}
